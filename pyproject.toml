@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "common-module"
+version = "0.1.0"
+description = ""
+authors = ["eunbyul616 <eunbyul616@gmail.com>"]
+readme = "README.md"
+packages = [{include = "common_module"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.5.1"
+pymysql = "^1.0.2"
+numpy = "^1.23.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

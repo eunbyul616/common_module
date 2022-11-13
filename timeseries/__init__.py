@@ -1,1 +1,1 @@
-from detect_timeseries_pattern import *
+from .detect_timeseries_pattern import *

@@ -23,5 +23,5 @@ cp $MODULE_PATH/.gitignore $PROJECT_PATH/
 # poetry
 poetry init
 poetry config virtualenvs.in-project true
-poetry shell
+source $(poetry env info --path)/bin/activate
 poetry install

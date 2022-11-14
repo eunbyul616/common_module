@@ -21,7 +21,8 @@ cp $MODULE_PATH/.gitignore $PROJECT_PATH/
 #pip3 install -r $MODULE_PATH/requirements.txt
 
 # poetry
+cd $PROJECT_PATH
 poetry init
 poetry config virtualenvs.in-project true
-source $(poetry env info --path)/bin/activate
+poetry shell
 poetry install

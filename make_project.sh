@@ -5,8 +5,6 @@ PROJECT_PATH=${MODULE_PATH%/*}
 
 cp -r $MODULE_PATH/template/* $PROJECT_PATH
 
-cp $MODULE_PATH/pyproject.toml $PROJECT_PATH/
-
 pip3 install virtualenv
 python3 -m virtualenv venv
 source venv/bin/activate

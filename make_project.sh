@@ -10,7 +10,7 @@ cp -r $MODULE_PATH/template/* $PROJECT_PATH
 cp $MODULE_PATH/pyproject.toml $PROJECT_PATH/
 
 # copy .gitignore
-cp MODULE_PATH/.gitignore $PROJECT_PATH/
+cp $MODULE_PATH/.gitignore $PROJECT_PATH/
 
 # setting environment
 #pip3 install virtualenv

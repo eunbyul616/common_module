@@ -13,15 +13,12 @@ cp -r $MODULE_PATH/template/* $PROJECT_PATH
 cp $MODULE_PATH/.gitignore $PROJECT_PATH/
 
 # setting environment
-# install pyenv, pyenv-virtualenv
-# brew install pyenv
-# brew install pyenv-virtualenv
-pyenv install 3.9.6
-pyenv virtualenv venv
-pyenv activate venv
+echo "need python version 3.9"
+pip3 install virtualenv
+virtualenv venv --python=python3.9
 
-# linux, mac os
-source venv/bin/activate
+# windows
+source venv/Scripts/activate
 
 # install packages
 pip install -r $MODULE_PATH/requirements.txt
@@ -31,3 +28,4 @@ pip install -r $MODULE_PATH/requirements.txt
 #poetry config virtualenvs.in-project true
 #poetry shell
 #poetry install
+

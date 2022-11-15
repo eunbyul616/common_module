@@ -1,5 +1,6 @@
 from datetime import datetime, timedelta
 
+
 class Date:
     @classmethod
     def today(cls):

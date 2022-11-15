@@ -1,6 +1,8 @@
 class GDSQuery:
-    pass
+    def __init__(self):
+        self.query = ""
 
 
 class TranQuery:
-    pass
+    def __init__(self):
+        self.query = ""
